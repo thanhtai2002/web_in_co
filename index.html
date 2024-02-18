@@ -4,6 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -11,172 +14,773 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-		<title>Web in co</title>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<link rel="shortcut icon" href="./Images/logo.jpg" type="image/svg+xml">
+		<title>Web Tân Vũ - In Cờ</title>
 	</head>
 	<body>
-		<div>
-			<!-- header -->
-			<header>
-				<!-- logo -->
-				<div class="header">
-					<div class="header-start">
-						<div class="logo_img">
-							<img src="https://cdn.haitrieu.com/wp-content/uploads/2021/12/hai-trieu-logo.svg" />
-						</div>
-						<!-- content header -->
-						<ul class="ul-header">
-							<li class="ul-header-li">
-								<a class="ul-header-a">Đồng Phục </a>
-								<i class="fa-solid fa-chevron-down"></i>
-								<a class="ul-header-a">Dịch Vụ </a>
-								<i class="fa-solid fa-chevron-down"></i>
-
-								<a class="ul-header-a">Local Brand </a>
-								<a class="ul-header-a">Tin Tuc</a>
-								<i class="fa-solid fa-chevron-down"></i>
+		<header class="header" data-header>
+			<div class="overlay" data-overlay></div>
+			<div class="header-top">
+				<div class="container">
+					<ul class="header-top-list">
+						<li>
+							<a href="#" class="header-top-link">
+								<i class="fa-regular fa-envelope"></i>
+								<span>email@gmail.com</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header-top-link">
+								<i class="fa-solid fa-location-dot"></i>
+								<address>Tp.Khanh Hoa</address>
+							</a>
+						</li>
+					</ul>
+					<div class="wrapper">
+						<ul class="header-top-social-list">
+							<li>
+								<a href="#" class="header-top-social-link">
+									<i class="fa-brands fa-facebook"></i>
+								</a>
 							</li>
+							
+							<li>
+								<a href="#" class="header-top-social-link">
+									<i class="fa-brands fa-instagram"></i>
+								</a>
+							</li>
+							
 						</ul>
+						
 					</div>
-					<!-- phone -->
-					<div class="header-phone">
-						<div class="ring">
-							<div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
-								<div class="coccoc-alo-ph-circle"></div>
-								<div class="coccoc-alo-ph-circle-fill"></div>
-								<div class="coccoc-alo-ph-img-circle">
-									<span><i class="fa-solid fa-phone"></i></span>
+				</div>
+			</div>
+
+			<div class="header-bottom">
+				<div class="container">
+					<a href="#" class="logo">
+						<img src="./Images/logo.jpg" alt="logo" />
+						<span  style="font-weight: 800;font-size: navbar-link;">Tân Vũ - In Các Loại Cờ </span>
+					</a>
+<!-- navbar mobile -->
+					<nav class="navbar" data-navbar>
+						<div class="navbar-top">
+							<a href="#" class="logo">
+								<img src="./Images/logo.jpg" alt="logo" />
+							</a>
+
+							<button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+								<ion-icon name="close-outline"></ion-icon>
+							</button>
+						</div>
+
+						<div class="navbar-bottom">
+							<ul class="navbar-list">
+								<li>
+									<a href="#home" class="navbar-link" data-nav-link>Trang chủ</a>
+								</li>
+
+								<li>
+									<a href="#about" class="navbar-link" data-nav-link>Giới Thiệu</a>
+								</li>
+
+								<li>
+									<a href="#service" class="navbar-link" data-nav-link>Dịch Vụ</a>
+								</li>
+
+								<li>
+									<a href="#cart" class="navbar-link" data-nav-link>Sản Phẩm</a>
+								</li>
+
+								<li>
+									<a href="#blog" class="navbar-link" data-nav-link>Tin Tức</a>
+								</li>
+								<li>
+									<a href="#mockup" class="navbar-link" data-nav-link>Đối Tác</a>
+								</li>
+								<li>
+									<a href="#contact" class="navbar-link" data-nav-link>Liên Hệ</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+<!-- end navbar -->
+
+					<div class="header-bottom-actions">
+						<button class="header-bottom-actions-btn" aria-label="Search">
+							<ion-icon name="search-outline"></ion-icon>
+
+							<span>Tìm Kiếm</span>
+						</button>
+
+						<button class="header-bottom-actions-btn" aria-label="Profile">
+							<ion-icon name="person-outline"></ion-icon>
+
+							<span>Cá Nhân</span>
+						</button>
+
+						<button class="header-bottom-actions-btn" aria-label="Cart">
+							<ion-icon name="cart-outline"></ion-icon>
+
+							<span>Giỏ Hàng</span>
+						</button>
+
+						<button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+							<ion-icon name="menu-outline"></ion-icon>
+
+							<span>Menu</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+	<!-- about -->
+		<section class="about" id="about">
+			<div class="container">
+				<figure class="about-banner">
+					<img src="./Images/banner2.webp" alt="House interior" />
+				</figure>
+
+				<div class="about-content">
+					<p class="section-subtitle">Thông Tin Công Ty</p>
+
+					<h2 class="h2 section-title">In cờ theo yêu cầu tại Tp.Khánh Hòa – Trực tiếp từ xưởng!</h2>
+
+					<p class="about-text">Là một trong các nhà sản xuất may in thêu trên vải hàng đầu tại Khánh Hòa , Tân Vũ cung cấp 2 dịch vụ in lụa & in chuyển nhiệt chất lượng cao trên cờ vải. Mời Quý khách hàng tìm hiểu thêm tại đây:</p>
+
+					<ul class="about-list">
+						<li class="about-item">
+							<div class="about-item-icon">
+								<i class="fa-solid fa-print"></i>
+							</div>
+
+							<p class="about-item-text">In Chuyển Nhiệt</p>
+						</li>
+
+						<li class="about-item">
+							<div class="about-item-icon">
+								<i class="fa-solid fa-print"></i>
+							</div>
+
+							<p class="about-item-text">In Màu</p>
+						</li>
+					</ul>
+
+					<p class="callout">"Với kinh nghiệm sản xuất, in công nghiệp trên vải cho các công ty, doanh nghiệp trên toàn quốc, Hải Triều mang đến giải pháp in logo, hình ảnh trên cờ theo yêu cầu chất lượng cao, thời gian đáp ứng nhanh chóng. "</p>
+
+					<a href="#service" class="btn">Dịch Vụ</a>
+				</div>
+			</div>
+		</section>
+<!-- service -->
+		<section class="service" id="service">
+			<div class="container">
+				<p class="section-subtitle">Thông Tin Dịch Vụ</p>
+
+				<h2 class="h2 section-title">Dịch Vụ Công Ty</h2>
+
+				<ul class="service-list">
+					<!-- img-1 -->
+					<li>
+						<div class="service-card">
+							<div class="card-icon">
+								<img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lq5o2kaq7q5z92" alt="In_Dich_Vu-Theo_Yeu_Cau" class="card-img" />
+							</div>
+
+							<h3 class="h3 card-title">
+								<a href="#">Cờ In May Theo Yêu Cầu</a>
+							</h3>
+
+							
+
+							<a href="#" class="card-link">
+								<span>Xem Chi Tiết</span>
+
+								<ion-icon name="arrow-forward-outline"></ion-icon>
+							</a>
+						</div>
+					</li>
+					<!-- img-2 -->
+					<li>
+						<div class="service-card">
+							<div class="card-icon">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3MM9WlElsED93EYBNxfQUOCeKRK-RSs3jag&usqp=CAU" alt="Sell_a_home" class="card-img" />
+							</div>
+
+							<h3 class="h3 card-title">
+								<a href="#">In Cờ Tổ Quốc</a>
+							</h3>
+
+							<a href="#" class="card-link">
+								<span>Xem Chi Tiết</span>
+
+								<ion-icon name="arrow-forward-outline"></ion-icon>
+							</a>
+						</div>
+					</li>
+					<!-- img-3-->
+					<li>
+						<div class="service-card">
+							<div class="card-icon">
+								<img src="https://hieuco.com/wp-content/uploads/2016/08/co-cac-nuoc-2-1024x768.jpg" alt="rent_a_home" class="card-img" />
+							</div>
+
+							<h3 class="h3 card-title">
+								<a href="#">Cờ Các Nước</a>
+							</h3>
+
+					
+
+							<a href="#" class="card-link">
+								<span>Xem Chi Tiết</span>
+
+								<ion-icon name="arrow-forward-outline"></ion-icon>
+							</a>
+						</div>
+					</li>
+					<!-- img-1 -->
+					<li>
+						<div class="service-card">
+							<div class="card-icon">
+								<img src="https://bizweb.dktcdn.net/thumb/large/100/082/575/files/nhung-uu-diem-cua-dich-vu-in-co-luu-niem-tai-minh-a-1.jpg?v=1558081418213" alt="In_Dich_Vu-Theo_Yeu_Cau" class="card-img" />
+							</div>
+
+							<h3 class="h3 card-title">
+								<a href="#">Cờ Tam Giác - Tay Cầm</a>
+							</h3>
+
+							
+
+							<a href="#" class="card-link">
+								<span>Xem Chi Tiết</span>
+
+								<ion-icon name="arrow-forward-outline"></ion-icon>
+							</a>
+						</div>
+					</li>
+					<!-- img-2 -->
+					<!-- img-1 -->
+					<li>
+						<div class="service-card">
+							<div class="card-icon">
+								<img src="https://bangronsukien.vn/wp-content/uploads/2023/07/phuon-quang-cao-ngoai-troi-768x764-1.jpg" alt="In_Dich_Vu-Theo_Yeu_Cau" class="card-img" />
+							</div>
+
+							<h3 class="h3 card-title">
+								<a href="#">Cờ Phướn Quảng Cáo</a>
+							</h3>
+
+							
+
+							<a href="#" class="card-link">
+								<span>Xem Chi Tiết</span>
+
+								<ion-icon name="arrow-forward-outline"></ion-icon>
+							</a>
+						</div>
+					</li>
+					<!-- img-2 -->
+					<!-- img-1 -->
+					<li>
+						<div class="service-card">
+							<div class="card-icon">
+								<img src="./Images/12.png" alt="In_Dich_Vu-Theo_Yeu_Cau" class="card-img" />
+							</div>
+
+							<h3 class="h3 card-title">
+								<a href="#">Cờ Công Ty</a>
+							</h3>
+
+
+							<a href="#" class="card-link">
+								<span>Xem Chi Tiết</span>
+
+								<ion-icon name="arrow-forward-outline"></ion-icon>
+							</a>
+						</div>
+					</li>
+					<!-- img-2 -->
+				</ul>
+			</div>
+			</section>
+			<!-- Featured -->
+		<section class="property" id="cart">
+			<div class="container">
+				<p class="section-subtitle">Thông tin</p>
+
+				<h2 class="h2 section-title">Sản Phẩm Nổi Bật</h2>
+				<div class="grid-container">
+					<div class="grid-item">
+					  <img src="./Images/3.png" alt="Image  1">
+					<div class="title">
+						<div class="grid-item-link">
+							<ion-icon name="location"></ion-icon>
+							<h4>Khánh Hòa</h4>
+						</div>
+						<div class="grid-item-link-tag">
+							<i class="fa-solid fa-tag" style="color: #63E6BE;"></i>
+							<span>CỜ CÔNG TY, DOANH NGHIỆP</span>
+						</div>
+						<span>Cờ Ngân Hàng BIDV</span>
+						<div class="grid-item-link-des">
+							<div class="grid-item-link-des-icon">
+								<i class="fa-solid fa-barcode"></i>
+								<h5>Mã: MIT-A8BWNM</h5>
+							</div>
+							<div class="grid-item-link-des-icon">
+								<h5>Đánh Giá:</h5>
+								<h5>4.7 </h5>
+								<i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+							</div>
+						</div>
+						<!-- Price -->
+						<span class="grid-item-link-price">225,000₫ – 700,000₫</span>
+					  </div>
+					</div>
+					<!-- img-2 -->
+					<div class="grid-item">
+						<img src="./Images/2.png" alt="Image  1">
+					  <div class="title">
+						  <div class="grid-item-link">
+							  <ion-icon name="location"></ion-icon>
+							  <h4>Khánh Hòa</h4>
+						  </div>
+						<div class="grid-item-link-tag">
+							<i class="fa-solid fa-tag" style="color: #63E6BE;"></i>
+							<span>CỜ CÔNG TY, DOANH NGHIỆP</span>
+						</div>
+						  <span >Cờ Ngân Hàng VietinBank</span>
+						  <div class="grid-item-link-des">
+							  <div class="grid-item-link-des-icon">
+								<i class="fa-sharp fa-solid fa-barcode"></i>
+								  <h5>MIT-A3BWNM</h5>
+							  </div>
+							  <div class="grid-item-link-des-icon">
+								  <h5>Đánh Giá:</h5>
+								  <h5>4.2 </h5>
+								  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+							  </div>
+						  </div>
+						  <!-- Price -->
+						  <span class="grid-item-link-price">225,000₫ – 700,000₫</span>
+						</div>
+					  </div>
+					  <!-- img-3 -->
+					  <div class="grid-item">
+						<img src="./Images/13.webp" alt="Image  1">
+					  <div class="title">
+						  <div class="grid-item-link">
+							  <ion-icon name="location"></ion-icon>
+							  <h4>Khánh Hòa</h4>
+						  </div>
+						<div class="grid-item-link-tag">
+							<i class="fa-solid fa-tag" style="color: #63E6BE;"></i>
+							<span>CỜ SỰ KIỆN</span>
+						</div>
+						  <span >Cờ HAPUA – Heads of ASEAN </span>
+						  <div class="grid-item-link-des">
+							  <div class="grid-item-link-des-icon">
+								<i class="fa-sharp fa-solid fa-barcode"></i>
+								  <h5>MSK-B1BWNM</h5>
+							  </div>
+							  <div class="grid-item-link-des-icon">
+								  <h5>Đánh Giá:</h5>
+								  <h5>4.6 </h5>
+								  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+							  </div>
+						  </div>
+						  <!-- Price -->
+						  <span class="grid-item-link-price">500,000₫</span>
+						</div>
+					  </div>
+					  <!-- img-4 -->
+					  <div class="grid-item">
+						<img src="./Images/9.png" alt="Image  1">
+					  <div class="title">
+						  <div class="grid-item-link">
+							  <ion-icon name="location"></ion-icon>
+							  <h4>Khánh Hòa</h4>
+						  </div>
+						<div class="grid-item-link-tag">
+							<i class="fa-solid fa-tag" style="color: #63E6BE;"></i>
+							<span>CỜ CÔNG TY, DOANH NGHIỆP</span>
+						</div>
+						  <span >Cờ Ngân Hàng TP Bank</span>
+						  <div class="grid-item-link-des">
+							  <div class="grid-item-link-des-icon">
+								<i class="fa-sharp fa-solid fa-barcode"></i>
+								  <h5>MUT-A9BWNM</h5>
+							  </div>
+							  <div class="grid-item-link-des-icon">
+								  <h5>Đánh Giá:</h5>
+								  <h5>4.6 </h5>
+								  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+							  </div>
+						  </div>
+						  <!-- Price -->
+						  <span class="grid-item-link-price">500,000₫ – 700,000₫</span>
+						</div>
+					  </div>
+					  <!-- img-5 -->
+					  <div class="grid-item">
+						<img src="./Images/11.png" alt="Image  1">
+					  <div class="title">
+						  <div class="grid-item-link">
+							  <ion-icon name="location"></ion-icon>
+							  <h4>Khánh Hòa</h4>
+						  </div>
+						<div class="grid-item-link-tag">
+							<i class="fa-solid fa-tag" style="color: #63E6BE;"></i>
+							<span>CỜ CÔNG TY, DOANH NGHIỆP</span>
+						</div>
+						  <span >Cờ Ngân Hàng AGRIBANK</span>
+						  <div class="grid-item-link-des">
+							  <div class="grid-item-link-des-icon">
+								<i class="fa-sharp fa-solid fa-barcode"></i>
+								  <h5>MUT-A2BWNM</h5>
+							  </div>
+							  <div class="grid-item-link-des-icon">
+								  <h5>Đánh Giá:</h5>
+								  <h5>4.6 </h5>
+								  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+							  </div>
+						  </div>
+						  <!-- Price -->
+						  <span class="grid-item-link-price">500,000₫</span>
+						</div>
+					  </div>
+					  <!-- img-6 -->
+					  <div class="grid-item">
+						<img src="./Images/6.png" alt="Image  1">
+					  <div class="title">
+						  <div class="grid-item-link">
+							  <ion-icon name="location"></ion-icon>
+							  <h4>Khánh Hòa</h4>
+						  </div>
+						<div class="grid-item-link-tag">
+							<i class="fa-solid fa-tag" style="color: #63E6BE;"></i>
+							<span>CỜ CÔNG TY, DOANH NGHIỆP</span>
+						</div>
+						  <span >Cờ Ngân Hàng VP Bank</span>
+						  <div class="grid-item-link-des">
+							  <div class="grid-item-link-des-icon">
+								<i class="fa-sharp fa-solid fa-barcode"></i>
+								  <h5>MIT-A9BWNM</h5>
+							  </div>
+							  <div class="grid-item-link-des-icon">
+								  <h5>Đánh Giá:</h5>
+								  <h5>4.8 </h5>
+								  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+							  </div>
+						  </div>
+						  <!-- Price -->
+						  <span class="grid-item-link-price">500,000₫ – 700,000₫</span>
+						</div>
+					  </div>
+					
+					  <!-- end-img -->
+				  
+				  
+</div>
+		</section>
+<!-- blog -->
+		<section class="blog" id="blog">
+			<div class="container">
+				<p class="section-subtitle">Tin Tức Hot</p>
+
+				<h2 class="h2 section-title">Bảng Tin Mới Nhất</h2>
+
+				<ul class="blog-list has-scrollbar">
+					<li>
+						<div class="blog-card">
+							<figure class="card-banner">
+								<img src="https://cdn.haitrieu.com/wp-content/uploads/2021/06/net-dep-van-hoa-viet-gio-to-nganh-may-350x263.png" alt="" class="w-100" />
+							</figure>
+
+							<div class="blog-content">
+								<div class="blog-content-top">
+
+									<h3 class="h3 blog-title">
+										<a href="#">Giỗ Tổ ngành may (12/12 Âm lịch) – Nguồn gốc, lễ vật & văn khấn cúng Tổ</a>
+									</h3>
+									<p>Nếu bạn làm trong ngành may mặc hẳn sẽ biết đến ngày giỗ tổ ngành...</p>
+								</div>
+
+								<div class="blog-content-bottom">
+								
+
+									<a href="#" class="read-more-btn">Đọc Ngay</a>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="header-phone-end">
-						<span>TƯ VẤN ĐẶT HÀNG 24/7</span>
-						<span>0834.19.0834</span>
-					</div>
-				</div>
-			</header>
-			<!-- slide -->
-			<div class="slideshow-container">
-				<div class="mySlides fade">
-					<div class="numbertext">1 / 3</div>
-					<img src="https://cdn.haitrieu.com/wp-content/uploads/2023/05/banner-xuong-may-in-co-vai-tphcm-1.png" style="width: 100%" />
+					</li>
+					<!-- img-2 -->
+					<li>
+						<div class="blog-card">
+							<figure class="card-banner">
+								<img src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/tieu-chuan-phuong-phap-danh-gia-do-ben-mau-vai-350x294.png" alt="" class="w-100" />
+							</figure>
+
+							<div class="blog-content">
+								<div class="blog-content-top">
+									
+
+									<h3 class="h3 blog-title">
+										<a href="#">Độ bền màu (Color Fastness) là gì? Tiêu chuẩn & phương pháp đánh giá độ bền màu vải</a>
+									</h3>
+									<p>Độ bền màu là một thuật ngữ được sử dụng nhiều trong ngành dệt may...</p>
+								</div>
+
+								<div class="blog-content-bottom">
+								
+
+									<a href="#" class="read-more-btn">Đọc Ngay</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- img-3 -->
+					<li>
+						<div class="blog-card">
+							<figure class="card-banner">
+								<img src="https://cdn.haitrieu.com/wp-content/uploads/2021/10/cach-nhuom-vai-tu-nhien-bang-rau-chan-vit-350x248.png" alt="" class="w-100" />
+							</figure>
+
+							<div class="blog-content">
+								<div class="blog-content-top">
+									
+
+									<h3 class="h3 blog-title">
+										<a href="#">12 cách nhuộm vải tự nhiên bằng các loại rau củ quả dễ tìm</a>
+									</h3>
+								</div>
+<p>Nhuộm vải thường là công đoạn cuối cùng, để tạo ra được một tấm vải... </p>
+								<div class="blog-content-bottom">
+								
+
+									<a href="#" class="read-more-btn">Đọc Ngay</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- img-4 -->
+					<li>
+						<div class="blog-card">
+							<figure class="card-banner">
+								<img src="https://cdn.haitrieu.com/wp-content/uploads/2022/03/top-loai-vai-may-khan-trai-ban-hien-nay-350x294.png" alt="" class="w-100" />
+							</figure>
+
+							<div class="blog-content">
+								<div class="blog-content-top">
+								
+
+									<h3 class="h3 blog-title">
+										<a href="#">Top 8 loại vải may khăn trải bàn bền đẹp, phổ biến hiện nay</a>
+									</h3>
+									<p>Khăn trải bàn là một vật dụng không thể thiếu nhằm giúp cho không gian...</p>
+								</div>
+
+								<div class="blog-content-bottom">
+								
+
+									<a href="#" class="read-more-btn">Đọc Ngay</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- img-5 -->
+
+					<li>
+						<div class="blog-card">
+							<figure class="card-banner">
+								<img src="https://cdn.haitrieu.com/wp-content/uploads/2022/03/top-cac-loai-vai-may-co-ben-dep-de-in-an-350x294.png" alt="" class="w-100" />
+							</figure>
+
+							<div class="blog-content">
+								<div class="blog-content-top">
+
+									<h3 class="h3 blog-title">
+										<a href="#">Top 4 loại vải may cờ – độ bền cao, dễ in ấn theo yêu cầu</a>
+									</h3>
+									<p>Hiện nay trên thị trường có rất nhiều loại vải khác nhau được sử dụng...</p>
+								</div>
+
+								<div class="blog-content-bottom">
+								
+
+									<a href="#" class="read-more-btn">Đọc Ngay</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- end-img -->
+				</ul>
+			</div>
+		</section>
+				<!-- Hero -->
+				<section class="hero" id="mockup">
+					<div class="container">
+						<figure class="hero-banner">
+						<img src="https://cdn.haitrieu.com/wp-content/uploads/2023/12/bidv-logo.png" style="width: 120px;height: 100px;"/>
+						<img src="https://cdn.haitrieu.com/wp-content/uploads/2023/12/trung-nguyen-legend-logo.png" style="width: 100px;height: 100px;"/>
+						<img src="https://cdn.haitrieu.com/wp-content/uploads/2023/12/van-lang-university-logo.png" style="width: 250px;height: 100px;"/>
+						<img src="https://cdn.haitrieu.com/wp-content/uploads/2023/12/fpt-logo.png" style="width: 220px;height: 100px;"/>
+						<img src="https://cdn.haitrieu.com/wp-content/uploads/2023/12/ninety-eight-logo.png" style="width: 290px;height: 100px;"/>
 					
-				</div>
-
-				<div class="mySlides fade">
-					<div class="numbertext">2 / 3</div>
-					<img src="https://cdn.haitrieu.com/wp-content/uploads/2023/05/banner-xuong-may-in-co-vai-tphcm-3.png" style="width: 100%" />
-			
-				</div>
-
-				<div class="mySlides fade">
-					<div class="numbertext">3 / 3</div>
-					<img src="https://cdn.haitrieu.com/wp-content/uploads/2023/05/banner-xuong-may-in-co-vai-tphcm-2.png" style="width: 100%" />
+						</figure>
 					
-				</div>
-
-				<a class="prev" onclick="plusSlides(-1)">❮</a>
-				<a class="next" onclick="plusSlides(1)">❯</a>
-			</div>
-			<br />
-
-			<div style="text-align: center">
-				<span class="dot" onclick="currentSlide(1)"></span>
-				<span class="dot" onclick="currentSlide(2)"></span>
-				<span class="dot" onclick="currentSlide(3)"></span>
-			</div>
-			<!-- end slide -->
-			<!-- banner -->
-			<div class="banner">
-				<div class="banner-home">
-					<div class="banner-left">
-						<div class="banner-left-top">
-							<span><i class="fa-solid fa-bars" style="font-size: 25px"></i></span>
-							<span style="margin-left: 10px; font-size: 25px; font-family: 'Montserrat', sans-serif">GIỚI THIỆU & NĂNG LỰC XƯỞNG IN CỜ HẢI TRIỀU</span>
-						</div>
-					
-						<div class="banner-left-center">
-							<a style=" font-family: 'Montserrat', sans-serif;">Là một trong các nhà sản xuất may in thêu trên vải hàng đầu tại TpHCM, Hải Triều cung cấp 2 dịch vụ in lụa & in chuyển nhiệt chất lượng cao trên cờ vải. Mời Quý khách hàng tìm hiểu
-								thêm tại đây:</a>
-						</div>
-						<div class="banner-left-button">
-							<button class="banner-left-button-a">IN CHUYỂN NHIỆT<i class="fa-solid fa-star" style="font-size:14px;"></i></button>
-							<button class="banner-left-button-b">IN LỤA<i class="fa-solid fa-star" style="font-size:14px;"></i></button>
-						</div>
-						<a style=" font-family: 'Montserrat', sans-serif;"
-							>Với kinh nghiệm sản xuất đồng phục cho các công ty, doanh nghiệp trên toàn quốc. Hải Triều đã cập nhật để đáp ứng nhu cầu sản xuất cờ vải in logo với chất lượng cao, thời gian đáp ứng
-							nhanh chóng.</a
-						>
 					</div>
-					<div class="banner-right">
-						<div>
-							<img style="width: 60%" src="https://cdn.haitrieu.com/wp-content/uploads/2023/03/phan-biet-co-1-mat-va-2-mat-tai-hai-trieu.png" />
-						<div class="banner-right-bottom">
-							<span>Hải Triều chuyên sản xuất cờ in 2 mặt vải</span>
-							<span style="margin-left:20px;margin-right:20px;font-size:16px">Chất lượng vượt trội trên thị trường!</span>
-						</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- end banner -->
-			<!-- Product -->
-			<div class="product">
-				<div class="banner-left-top">
-					<span><i class="fa-solid fa-bars" style="font-size: 25px"></i></span>
-					<span style="margin-left: 10px; font-size: 25px; font-family: 'Montserrat', sans-serif">XƯỞNG IN CÁC LOẠI CỜ VẢI CHẤT LƯỢNG CAO</span>
-				</div>
-				<div class="product-items">
-					<img src="./Images/2.png" class="product-images"/>
-				<img src="./Images/4.png" class="product-images"/>
-				<img src="./Images/4.png" class="product-images"/>
-				<img src="./Images/5.png" class="product-images"/>
-				<img src="./Images/6.png" class="product-images"/>
-				<img src="./Images/11.png" class="product-images"/>
-				<img src="./Images/11.png" class="product-images"/>
-				<img src="./Images/11.png" class="product-images"/>
-				<img src="./Images/11.png" class="product-images"/>
-				<img src="./Images/11.png" class="product-images"/>
-				<img src="./Images/11.png" class="product-images"/>
-				</div>
-			
-			</div>
-			<!-- end-product -->
-		</div>
-		<script>
-			let slideIndex = 1;
-			showSlides(slideIndex);
+				</section>
+		
+				<!-- end hero -->
+<!-- cta -->
+      <section class="cta" id="contact">
+        <div class="container">
 
-			function plusSlides(n) {
-				showSlides((slideIndex += n));
-			}
+          <div class="cta-card">
+            <div class="card-content">
+              <h2 class="h2 card-title">IN LOGO, HÌNH ẢNH 3D CHẤT LƯỢNG CAO!</h2>
+            </div>
 
-			function currentSlide(n) {
-				showSlides((slideIndex = n));
-			}
+            <button class="btn cta-btn">
+              <span>Liên Hệ Ngay</span>
 
-			function showSlides(n) {
-				let i;
-				let slides = document.getElementsByClassName("mySlides");
-				let dots = document.getElementsByClassName("dot");
-				if (n > slides.length) {
-					slideIndex = 1;
-				}
-				if (n < 1) {
-					slideIndex = slides.length;
-				}
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";
-				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");
-				}
-				slides[slideIndex - 1].style.display = "block";
-				dots[slideIndex - 1].className += " active";
-			}
-		</script>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+<!-- footer -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+           <span class="footer-list-title">Thông tin liên hệ</span>
+          </a>
+  <div class="footer-colum">
+	<p>Tư vấn & đặt hàng: 0834 19 0856</p>
+  <p>In vải chuyển nhiệt: 0834 47 0856</p>
+  <p>Xưởng in thêu: 12,Phường A,Tp Khánh Hòa</p>
+  </div>
+          <p class="section-text">
+			Email: info@tanvu.com
+          </p>
+
+          <ul class="contact-list">
+
+            <li>
+              <a href="#" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>Khanh Hoa City</address>
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:+0123456789" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <span>CSKH: 0983737377</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>tanvu@gmail.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-link-box">
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Hỗ Trợ Khách Hàng</p>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Điều khoản & chính sách bảo mật</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Hướng dẫn mua hàng</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Hợp tác cùng chúng tôi</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Cam kết chất lượng</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Chính sách bảo hành & đổi trả</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Câu hỏi thường gặp</a>
+            </li>
+          </ul>  
+          </ul>
+		  <!-- footer-link-2 -->
+		  <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Thông tin – tư vấn</p>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Blog kiến thức</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Quy trình sản xuất may mặc</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Quy trình sản xuất may mặc</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Quy trình kiểm tra chất lượng
+			</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Thiết kế sản phẩm</a>
+            </li>
+          </ul>  
+          </ul>
+		  <!-- footer-link-3 -->
+		
+        </div>
+      </div>
+	  
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+			POWERED BY &copy; 2024 <a href="#">Thanhtai</a>. All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </footer> 
+  <!-- js -->
+		<script src="script.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<!-- end js -->
 	</body>
 </html>
